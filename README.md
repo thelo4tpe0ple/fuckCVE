@@ -1,2 +1,2 @@
 # fuckCVE
-A tool of auto scan CVE in code
+A auto tool of sacnning CVE for project
