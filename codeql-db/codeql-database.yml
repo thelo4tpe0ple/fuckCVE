@@ -1,0 +1,13 @@
+---
+sourceLocationPrefix: /home/zch/workspace/linux
+baselineLinesOfCode: 20443193
+unicodeNewlines: false
+columnKind: utf8
+primaryLanguage: cpp
+creationMetadata:
+  sha: 830b3c68c1fb1e9176028d02ef86f3cf76aa2476
+  cliVersion: 2.22.1
+  creationTime: 2025-08-03T03:25:18.418315426Z
+overlayBaseDatabase: false
+overlayDatabase: false
+finalised: true

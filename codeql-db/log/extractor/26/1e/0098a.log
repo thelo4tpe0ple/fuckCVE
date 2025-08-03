@@ -1,0 +1,70 @@
+[E 03:25:23 168582] CodeQL C/C++ Extractor 2.22.1
+[E 03:25:23 168582] Current directory: /home/zch/workspace/linux
+[E 03:25:23 168582] Command: /opt/codeql/cpp/tools/linux64/extractor --mimic /usr/bin/x86_64-linux-gnu-gcc-12 -Werror -D__KERNEL__ -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu11 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -mindirect-branch-cs-prefix -mfunction-return=thunk-extern -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 -fno-allow-store-data-races -Wframe-larger-than=2048 -fstack-protector-strong -Wno-main -Wno-unused-but-set-variable -Wno-unused-const-variable -Wno-dangling-pointer -fomit-frame-pointer -ftrivial-auto-var-init=zero -fno-stack-clash-protection -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wcast-function-type -Wno-stringop-truncation -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -Werror -Wno-array-bounds -Wno-alloc-size-larger-than -Wimplicit-fallthrough=5 -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned -fno-addrsig -c -x c /dev/null -o .tmp_168578/tmp
+[E 03:25:23 168582] Warning[extractor-c++]: In canonicalise_path: fs::canonical failed on .tmp_168578/tmp (No such file or directory)
+[E 03:25:23 168582] Checking whether C compilation already happened.
+[E 03:25:23 168582] Checking for tag c-compilation-happened
+[E 03:25:23 168582] Checking CODEQL_TRACER_DB_ID 0000000000029284_0000000000000001
+[E 03:25:23 168582] Locking DB /home/zch/workspace/fuckCVE/codeql-db/working/tags.db
+[E 03:25:23 168582] Locked DB /home/zch/workspace/fuckCVE/codeql-db/working/tags.db
+[E 03:25:23 168582] Unlocking DB
+[E 03:25:23 168582] Unlocked DB
+[E 03:25:23 168582] Looks like C compilation didn't already happen.
+[E 03:25:23 168582] Checking whether C compilation has been attempted.
+[E 03:25:23 168582] Checking for tag c-compilation-attempted
+[E 03:25:23 168582] Checking CODEQL_TRACER_DB_ID 0000000000029284_0000000000000001
+[E 03:25:23 168582] Locking DB /home/zch/workspace/fuckCVE/codeql-db/working/tags.db
+[E 03:25:23 168582] Locked DB /home/zch/workspace/fuckCVE/codeql-db/working/tags.db
+[E 03:25:23 168582] Unlocking DB
+[E 03:25:23 168582] Unlocked DB
+[E 03:25:23 168582] Marking C compilation as attempted.
+[E 03:25:23 168582] Setting tag c-compilation-attempted
+[E 03:25:23 168582] Starting from CODEQL_TRACER_DB_ID 0000000000029284_0000000000000001
+[E 03:25:23 168582] Locking DB /home/zch/workspace/fuckCVE/codeql-db/working/tags.db
+[E 03:25:23 168582] Locked DB /home/zch/workspace/fuckCVE/codeql-db/working/tags.db
+[E 03:25:23 168582] Set tag for 0000000000029284_0000000000000001
+[E 03:25:23 168582] Set tag for 0000000000029282_0000000000000001
+[E 03:25:23 168582] Set tag for 000000000002921E_0000000000000001
+[E 03:25:23 168582] Set tag for 00000000000291BF_0000000000000001
+[E 03:25:23 168582] Set tag for 000000000002916E_0000000000000001
+[E 03:25:23 168582] Set tag for 0000000000028627_0000000000000001
+[E 03:25:23 168582] Set tag for 00000000000284AB_0000000000000001
+[E 03:25:23 168582] Set tag for 0000000000027FCC_0000000000000003
+[E 03:25:23 168582] Set tag for 0000000000027FCC_0000000000000002
+[E 03:25:23 168582] Set tag for root
+[E 03:25:23 168582] Unlocking DB
+[E 03:25:23 168582] Unlocked DB
+[E 03:25:23 168582] Processed command line: /opt/codeql/cpp/tools/linux64/extractor --trapfolder /home/zch/workspace/fuckCVE/codeql-db/trap/cpp --src_archive /home/zch/workspace/fuckCVE/codeql-db/src --object_filename .tmp_168578/tmp --no_warnings_and_discretionary_errors --error_limit 1000 --disable_system_macros --variadic_macros --incognito --c11 --gcc --gnu_version 40000 -D__KERNEL__ -- /dev/null
+[E 03:25:23 168582] CODEQL_EXTRACTOR_CPP_TRAP_CACHING is not set
+[E 03:25:23 168582] CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_WRITE is not set
+[E 03:25:23 168582] CODEQL_EXTRACTOR_CPP_OPTION_TRAP_CACHE_DIR is not set
+[E 03:25:23 168582] Initialising TRAP cache at path: 56/1134/34c6bbc111183cc576134184adfe
+[E 03:25:23 168582] Not using TRAP cache
+[E 03:25:23 168582] TRAP cache miss
+[E 03:25:23 168582] Starting compilation TRAP /home/zch/workspace/fuckCVE/codeql-db/trap/cpp/compilations/50/11775816_0.trap.zst
+[E 03:25:23 168582] Archiving /home/zch/workspace/fuckCVE/codeql-db/src/dev/null
+[E 03:25:23 168582] Failed to archive /home/zch/workspace/fuckCVE/codeql-db/src/dev/null
+[E 03:25:23 168582] Creating trap tarball /home/zch/workspace/fuckCVE/codeql-db/trap/cpp/tarballs/dev/null.f0d4059d_2.trap.tar.zst
+[E 03:25:23 168582] Emitting trap files for /dev/null
+[E 03:25:23 168582] Opening existencedb in /home/zch/workspace/fuckCVE/codeql-db/working/existencedb/db
+[E 03:25:23 168582] Warning[extractor-c++]: In canonicalise_path: fs::canonical failed on .tmp_168578/tmp (No such file or directory)
+[E 03:25:23 168582] Wrote 0 files to /home/zch/workspace/fuckCVE/codeql-db/trap/cpp/tarballs/dev/null.f0d4059d_2.trap.tar.zst
+[E 03:25:23 168582] Finished compilation TRAP /home/zch/workspace/fuckCVE/codeql-db/trap/cpp/compilations/50/11775816_0.trap.zst
+[E 03:25:23 168582] Marking C compilation as happened.
+[E 03:25:23 168582] Setting tag c-compilation-happened
+[E 03:25:23 168582] Starting from CODEQL_TRACER_DB_ID 0000000000029284_0000000000000001
+[E 03:25:23 168582] Locking DB /home/zch/workspace/fuckCVE/codeql-db/working/tags.db
+[E 03:25:23 168582] Locked DB /home/zch/workspace/fuckCVE/codeql-db/working/tags.db
+[E 03:25:23 168582] Set tag for 0000000000029284_0000000000000001
+[E 03:25:23 168582] Set tag for 0000000000029282_0000000000000001
+[E 03:25:23 168582] Set tag for 000000000002921E_0000000000000001
+[E 03:25:23 168582] Set tag for 00000000000291BF_0000000000000001
+[E 03:25:23 168582] Set tag for 000000000002916E_0000000000000001
+[E 03:25:23 168582] Set tag for 0000000000028627_0000000000000001
+[E 03:25:23 168582] Set tag for 00000000000284AB_0000000000000001
+[E 03:25:23 168582] Set tag for 0000000000027FCC_0000000000000003
+[E 03:25:23 168582] Set tag for 0000000000027FCC_0000000000000002
+[E 03:25:23 168582] Set tag for root
+[E 03:25:23 168582] Unlocking DB
+[E 03:25:23 168582] Unlocked DB
+[E 03:25:23 168582] Extractor exited successfully
