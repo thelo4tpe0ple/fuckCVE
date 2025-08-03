@@ -1,0 +1,10 @@
+[2025-08-03 12:36:46] This is codeql query run queries/CVE-2021-41073.ql --database=codeql-db/ --output=result.bqrsc
+[2025-08-03 12:36:46] Log file was started late.
+[2025-08-03 12:36:46] Calling plumbing command: codeql resolve ram --dataset=/home/zch/workspace/fuckCVE/codeql-db/db-cpp --format=json
+[2025-08-03 12:36:46] [PROGRESS] resolve ram> Stringpool size measured as 2146714
+[2025-08-03 12:36:46] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1396M"
+                      ]
+[2025-08-03 12:36:46] Chaining via /tmp/codeql.ZdFQdvVd to plumbing: execute queries -J-Xmx1396M --verbosity=progress --logdir=/home/zch/workspace/fuckCVE/codeql-db/log --evaluator-log-level=5 --warnings=show --qlconfig-file=/home/zch/workspace/fuckCVE/qlconfig.yml --dynamic-join-order-mode=none --output=/home/zch/workspace/fuckCVE/result.bqrsc -- /home/zch/workspace/fuckCVE/codeql-db/db-cpp path:/home/zch/workspace/fuckCVE/queries/CVE-2021-41073.ql
+[2025-08-03 12:36:46] Exiting with code 70

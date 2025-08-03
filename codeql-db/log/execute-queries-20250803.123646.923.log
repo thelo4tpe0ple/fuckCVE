@@ -1,0 +1,17 @@
+[2025-08-03 12:36:46] This is codeql execute queries -J-Xmx1396M --verbosity=progress --logdir=/home/zch/workspace/fuckCVE/codeql-db/log --evaluator-log-level=5 --warnings=show --qlconfig-file=/home/zch/workspace/fuckCVE/qlconfig.yml --dynamic-join-order-mode=none --output=/home/zch/workspace/fuckCVE/result.bqrsc -- /home/zch/workspace/fuckCVE/codeql-db/db-cpp path:/home/zch/workspace/fuckCVE/queries/CVE-2021-41073.ql
+[2025-08-03 12:36:46] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/zch/workspace/fuckCVE/qlconfig.yml --format=json -- path:/home/zch/workspace/fuckCVE/queries/CVE-2021-41073.ql
+[2025-08-03 12:36:47] [PROGRESS] resolve queries> Recording pack reference (invalid QL pack at /home/zch/workspace/fuckCVE/queries/qlpack.yml) at /home/zch/workspace/fuckCVE/queries.
+[2025-08-03 12:36:47] [ERROR] resolve queries> ERROR: Invalid pack name 'zch/fuckCVE'. A pack name must contain only lowercase ASCII letters, ASCII digits, and hyphens.
+                              (eventual cause: InvalidPackNameException "Invalid pack name 'zch/fuckCVE'. A pack name must contain only lowercase ASCII l...") (/home/zch/workspace/fuckCVE/queries/qlpack.yml:1,1-1)
+[2025-08-03 12:36:47] Exception caught at top level: A 'codeql resolve queries' operation failed with error code 2
+                      com.semmle.cli2.picocli.PlumbingRunner.call(PlumbingRunner.java:75)
+                      com.semmle.cli2.picocli.SubcommandCommon.callPlumbingInProcess(SubcommandCommon.java:170)
+                      com.semmle.cli2.execute.ExecuteQueriesCommand.executeSubcommand(ExecuteQueriesCommand.java:424)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$5(SubcommandCommon.java:892)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:444)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:890)
+                      com.semmle.cli2.picocli.SubcommandCommon.toplevelMain(SubcommandCommon.java:777)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:757)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:238)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:259)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:115)
